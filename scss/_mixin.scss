@@ -1,0 +1,23 @@
+@mixin footerRedes {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 0px;
+}
+
+@mixin footerLinks ($textDeco, $size, $color) {
+    text-decoration: $textDeco;
+    font-size: $size;
+    color: $color;
+
+}
+
+@mixin estiloImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}

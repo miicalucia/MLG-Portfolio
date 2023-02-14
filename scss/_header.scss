@@ -1,0 +1,39 @@
+/*HEADER INICIO*/
+
+.inicio {
+    img {
+        @include estiloImg;
+        margin: 16px;
+        align-items: start;
+    }
+}
+
+.tituloPrincipal {
+    margin: 8px;
+
+    a {
+        text-decoration: none;
+
+        h1 {
+            color: $colorTextos;
+            margin: 0px 24px;
+            padding: 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    h2 {
+        color: $colorTextos2;
+        margin: 8px;
+        padding: 8px;
+        text-align: center;
+    }
+}
+
+header {
+    grid-area: header;
+    height: 87px;
+}

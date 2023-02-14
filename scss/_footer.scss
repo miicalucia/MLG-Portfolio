@@ -1,0 +1,135 @@
+.footerGeneral {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 8px;
+    font-size: 12px;
+    color: $colorTextos;
+
+    p {
+        margin: 16px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.redesSociales {
+    @include footerRedes;
+
+    .redes {
+        margin: 8px;
+
+        a {
+            text-decoration: none;
+            color: $colorTextos;
+            font-size: 1.4rem;
+
+            i {
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+/*CONTACTO*/
+
+.socialMedia {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 12px;
+    color: $colorTextos;
+
+    .redesContacto {
+
+        @include footerRedes;
+
+        .redes {
+            margin: 8px;
+
+            a {
+                @include footerLinks (none, 1.4rem, $colorTextos);
+
+                i {
+                    display: inline-block;
+                    margin-right: 8px;
+                }
+
+            }
+        }
+    }
+}
+
+.derechos {
+    text-align: center;
+    p {
+        margin-top: 16px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .derechos {
+        display: flex;
+        flex-flow: column nowrap;
+        grid-area: footer;
+    }
+
+    .bodyContacto {
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+            "header header"
+            "formulario social"
+            "formulario social"
+            "footer footer"
+        ;
+
+    }
+
+    .footerGeneral {
+        grid-area: pieDePagina;
+
+        .redesSociales {
+            grid-template-columns: 120px 120px 120px 120px;
+        }
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: $colorCards;
+        box-shadow: 5px 3px 10px;
+        opacity: 90%;
+        margin-right: 32px;
+        width: 300px;
+        height: 500px;
+        grid-area: social;
+
+        .redesContacto {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0px;
+            margin-top: 200px;
+
+            .redes {
+                a {
+                    font-size: 16px;
+                    color: $colorFondoGeneral;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $colorTextos;
+                        transition: 0.7s;
+                    }
+                }
+            }
+        }
+    }
+}

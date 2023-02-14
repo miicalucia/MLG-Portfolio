@@ -1,0 +1,403 @@
+/*SOBRE MI*/
+
+.about {
+    text-align: center;
+
+    img {
+        width: 200px;
+        height: 174px;
+        border-radius: 10px;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    h2 {
+        margin: 16px;
+    }
+}
+
+.sobreMi {
+    margin: 16px 4px;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "html css"
+        "adm bart"
+        "boton boton"
+    ;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    h3 {
+        margin: 8px 0px;
+        grid-area: titulo;
+    }
+
+    div {
+        display: inline-block;
+
+        .conocimientos1 {
+            grid-area: html;
+        }
+
+        .conocimientos2 {
+            grid-area: css;
+        }
+
+        .conocimientos3 {
+            grid-area: adm;
+        }
+
+        .conocimientos4 {
+            grid-area: bart;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 110px;
+            height: 100px;
+            margin: 8px;
+            padding: 4px;
+            font-size: 18px;
+            border: 2px solid $colorCards;
+            border-radius: 5px;
+        }
+    }
+
+    #cv {
+        width: 140px;
+        height: 38px;
+        background-color: $colorFondoGeneral;
+        border: 2px solid $colorTextos;
+        border-radius: 5px;
+        margin: 2rem 1rem;
+        grid-area: boton;
+
+        a {
+            text-decoration: none;
+            color: $colorTextos;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/*CONTACTO*/
+
+.formulario {
+    max-width: 600px;
+    max-height: 708px;
+    margin: 24px;
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    div {
+        input {
+            font-size: 16px;
+            margin: 8px 0px 32px 0px;
+            border: 1px solid $colorTextos;
+        }
+
+        textarea {
+            font-size: 16px;
+            border: 1px solid $colorTextos;
+        }
+
+    }
+
+    .novedades {
+        display: flex;
+        align-items: center;
+
+        .check {
+            margin: 4px;
+        }
+
+        label {
+            margin: 4px;
+        }
+    }
+
+    .botonesFormulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 8px;
+    }
+
+    .opcionesFormulario {
+        width: 140px;
+        height: 48px;
+        margin: 16px;
+        background-color: $colorFondoGeneral;
+        border: $colorCards 1px solid;
+        border-radius: 6px;
+        color: $colorTextos;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+
+/*SERVICIOS*/
+
+.carrusel {
+
+    h2 {
+        color: $colorFondoGeneral;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        color: $colorTextos;
+        font-weight: 500;
+    }
+
+}
+
+.texto {
+    div {
+        margin: 8px 0px 32px 0px; 
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.sectionReferencias {
+
+    h2 {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .referencias {
+        border: 2px dotted $colorCards;
+        background-color: $colorCards2;
+        border-radius: 10px;
+        padding: 16px;
+        margin: auto;
+        max-width: 450px;
+
+        h3 {
+            margin-bottom: 16px;
+        }
+
+        img {
+            margin-bottom: 16px;
+            @include estiloImg;
+        }
+    }
+}
+
+/*PORTAFOLIO*/
+
+.portafolio {
+
+
+    .trabajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        padding: 8px;
+
+        li {
+            width: 70%;
+            padding: 32px;
+            margin: 16px 0px;
+            border: 2px $colorCards outset;
+            box-shadow: 2px 2px 7px;
+            text-align: center;
+
+            a {
+                color: $colorTextos;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .contenedorForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (min-width:1024px) {
+    /*SOBRE MI*/
+
+    .bodySobreMi {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "conocimientos main"
+            "conocimientos main"
+            "pieDePagina pieDePagina"
+        ;
+        column-gap: 3rem;
+        row-gap: 3rem;
+        align-items: center;
+    }
+
+    .about {
+        grid-area: main;
+        font-size: 2rem;
+        font-weight: 300;
+
+        .section-title {
+            margin: 9px 0px;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .row {
+            border: 2px $colorCards dotted;
+            margin: 48px 0px;
+            padding: 16px;
+
+            h2 {
+                margin-bottom: 1.6rem;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .sobreMi {
+        background-color: $colorCards2;
+        border-radius: 5px;
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "html css"
+            "adm bart"
+            "boton boton"
+        ;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-area: conocimientos;
+        width: 400px;
+        height: 600px;
+        margin-left: 32px;
+        padding: 16px;
+        box-shadow: 0px 3px 10px;
+        opacity: 70%;
+
+        div {
+            border: 2px solid $colorTextos;
+            border-radius: 4px;
+            background-color: $colorFondoGeneral;
+        }
+
+        #cv {
+            &:hover {
+                background-color: $colorTextos;
+                transition: 2s;
+            }
+
+            a {
+                &:hover {
+                    color: $colorFondoGeneral;
+                }
+            }
+        }
+    }
+
+    .animacion {
+        animation-name: animacion;
+        animation-timing-function: ease-in;
+        animation-duration: 3s;
+    }
+
+    @keyframes animacion {
+
+        0% {
+            opacity: 0%;
+        }
+
+        50% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    /*CONTACTO*/
+
+    .formulario {
+        width: 500px;
+        grid-area: formulario;
+
+        div {
+            font-size: 2rem;
+
+            input {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .opcionesFormulario {
+        width: 100px;
+        height: 50px;
+        font-size: 12px;
+
+        &:hover {
+            background-color: $colorTextos;
+            transition: 1s;
+            color: $colorFondoGeneral;
+        }
+    }
+
+    /*SERVICIOS*/
+
+    .sectionReferencias {
+
+        .referencias {
+            max-width: 900px;
+        }
+    }
+
+    /*PORTAFOLIO*/
+
+    .portafolio {
+        
+        .trabajos {
+
+            li {
+                a {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
