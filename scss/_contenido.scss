@@ -76,18 +76,18 @@
 
     #cv {
         width: 140px;
-        height: 38px;
+        height: 48px;
         background-color: $colorFondoGeneral;
-        border: 2px solid $colorTextos;
-        border-radius: 5px;
+        border: 1px solid $colorTextos;
+        border-radius: 6px;
         margin: 2rem 1rem;
         grid-area: boton;
 
         a {
             text-decoration: none;
             color: $colorTextos;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
         }
     }
 }
