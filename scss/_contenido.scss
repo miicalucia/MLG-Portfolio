@@ -70,7 +70,7 @@
             padding: 4px;
             font-size: 18px;
             border: 2px solid $colorCards;
-            border-radius: 5px;
+            border-radius: 10% 20%;
         }
     }
 
@@ -95,9 +95,9 @@
 /*CONTACTO*/
 
 .formulario {
-    max-width: 600px;
+    width: 90%;
     max-height: 708px;
-    margin: 24px;
+    margin: 18px;
 
     h1 {
         margin-bottom: 32px;
@@ -142,13 +142,14 @@
         height: 48px;
         margin: 16px;
         background-color: $colorFondoGeneral;
-        border: $colorCards 1px solid;
+        border: $colorTextos 1px solid;
         border-radius: 6px;
         color: $colorTextos;
         font-weight: 600;
         font-size: 18px;
     }
 }
+
 
 
 /*SERVICIOS*/
@@ -180,6 +181,11 @@
 }
 
 .sectionReferencias {
+    border: 2px dotted $colorCards;
+    background-color: $colorCards2;
+    border-radius: 10px;
+    padding: 16px;
+    margin: auto;
 
     h2 {
         text-align: center;
@@ -187,13 +193,6 @@
     }
 
     .referencias {
-        border: 2px dotted $colorCards;
-        background-color: $colorCards2;
-        border-radius: 10px;
-        padding: 16px;
-        margin: auto;
-        max-width: 450px;
-
         h3 {
             margin-bottom: 16px;
         }
@@ -234,11 +233,15 @@
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:600px) and (max-width:1023px) {
     .contenedorForm {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .formulario {
+            width: 70%;
+        }
     }
 }
 
@@ -310,9 +313,10 @@
         opacity: 70%;
 
         div {
-            border: 2px solid $colorTextos;
-            border-radius: 4px;
-            background-color: $colorFondoGeneral;
+            p {
+                border: 2px solid $colorTextos;
+                background-color: $colorFondoGeneral;
+            }
         }
 
         #cv {
@@ -380,10 +384,7 @@
     /*SERVICIOS*/
 
     .sectionReferencias {
-
-        .referencias {
-            max-width: 900px;
-        }
+        max-width: 1024px;
     }
 
     /*PORTAFOLIO*/
