@@ -10,13 +10,15 @@
         row-gap: 16px;
         justify-items: center;
         padding-left: 0px;
-        
-        .itemsMenu {
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: $colorTextos;
             width: 120px;
             height: 120px;
             padding: 47px 16px;
             margin: 8px;
-            list-style-type: none;
             display: inline-block;
             border: 2px solid $colorTextos;
             border-radius: 10px;
@@ -24,11 +26,10 @@
             background-color: $colorCards;
             text-align: center;
 
-            a {
-                text-decoration: none;
-                font-weight: bold;
-                color: $colorTextos;
+            .itemsMenu {
+                list-style-type: none;
             }
+
         }
     }
 }
@@ -51,7 +52,7 @@
         ul {
             grid-template-columns: 25% 25% 25% 25%;
 
-            .itemsMenu {
+            a {
                 width: 200px;
                 height: 200px;
                 padding: 82px 16px;

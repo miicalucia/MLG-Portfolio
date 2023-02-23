@@ -88,12 +88,14 @@ header {
   justify-items: center;
   padding-left: 0px;
 }
-.menu ul .itemsMenu {
+.menu ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #07133F;
   width: 120px;
   height: 120px;
   padding: 47px 16px;
   margin: 8px;
-  list-style-type: none;
   display: inline-block;
   border: 2px solid #07133F;
   border-radius: 10px;
@@ -101,10 +103,8 @@ header {
   background-color: #99adf3;
   text-align: center;
 }
-.menu ul .itemsMenu a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #07133F;
+.menu ul a .itemsMenu {
+  list-style-type: none;
 }
 
 /*MENU SITIO*/
@@ -123,7 +123,7 @@ header {
   .menu ul {
     grid-template-columns: 25% 25% 25% 25%;
   }
-  .menu ul .itemsMenu {
+  .menu ul a {
     width: 200px;
     height: 200px;
     padding: 82px 16px;
