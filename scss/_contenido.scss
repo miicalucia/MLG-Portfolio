@@ -34,7 +34,7 @@
     justify-items: center;
     background-color: $colorTextos;
     color: $colorFondoGeneral;
-    
+
 
     h3 {
         margin: 8px 0px;
@@ -224,8 +224,10 @@
             width: 70%;
             padding: 32px;
             margin: 16px 0px;
-            border: 2px $colorCards outset;
-            box-shadow: 2px 2px 7px;
+            background-color: $colorFondoGeneral;
+            border: 1px solid $colorTextos;
+            box-shadow: 2px 2px 4px #07133f32;
+            border-radius: 6px;
             text-align: center;
 
             a {
@@ -263,8 +265,8 @@
             "pieDePagina pieDePagina"
         ;
         column-gap: 3rem;
-        
-        
+
+
     }
 
     .about {
@@ -329,6 +331,7 @@
             font-size: 2.8rem;
             font-weight: 600;
         }
+
         div {
             p {
                 color: $colorFondoGeneral;

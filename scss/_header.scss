@@ -3,7 +3,7 @@
 .inicio {
     img {
         @include estiloImg;
-        margin: 16px;
+        margin: 0px 16px;
         align-items: start;
     }
 }
@@ -36,4 +36,13 @@
 header {
     grid-area: header;
     height: 87px;
+}
+
+@media (min-width:1024px) {
+    .inicio {
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
 }
