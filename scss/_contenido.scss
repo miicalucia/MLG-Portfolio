@@ -19,7 +19,7 @@
 }
 
 .sobreMi {
-    margin: 16px 4px;
+    padding: 24px 0px;
     text-align: center;
     display: grid;
     grid-template-areas:
@@ -32,10 +32,15 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+    background-color: $colorTextos;
+    color: $colorFondoGeneral;
+    
 
     h3 {
         margin: 8px 0px;
         grid-area: titulo;
+        font-size: 2.6rem;
+        font-weight: 500;
     }
 
     div {
@@ -61,7 +66,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             overflow: hidden;
             width: 110px;
@@ -69,8 +74,6 @@
             margin: 8px;
             padding: 4px;
             font-size: 18px;
-            border: 2px solid $colorCards;
-            border-radius: 10% 20%;
         }
     }
 
@@ -79,6 +82,7 @@
         height: 48px;
         background-color: $colorFondoGeneral;
         border: 1px solid $colorTextos;
+        box-shadow: 2px 2px 4px #07133f32;
         border-radius: 6px;
         margin: 2rem 1rem;
         grid-area: boton;
@@ -144,6 +148,7 @@
         background-color: $colorFondoGeneral;
         border: $colorTextos 1px solid;
         border-radius: 6px;
+        box-shadow: 2px 2px 4px #07133f32;
         color: $colorTextos;
         font-weight: 600;
         font-size: 18px;
@@ -258,41 +263,51 @@
             "pieDePagina pieDePagina"
         ;
         column-gap: 3rem;
-        row-gap: 3rem;
-        align-items: center;
+        
+        
     }
 
     .about {
         grid-area: main;
         font-size: 2rem;
         font-weight: 300;
+        padding: 16px 64px;
 
         .section-title {
             margin: 9px 0px;
 
+            h1 {
+                text-align: left;
+                margin: 32px 0px;
+            }
+
             p {
-                text-align: center;
+                text-align: left;
             }
         }
 
         .row {
-            border: 2px $colorCards dotted;
-            margin: 48px 0px;
-            padding: 16px;
 
             h2 {
+                margin-left: 0px;
                 margin-bottom: 1.6rem;
+                text-align: left;
             }
 
             img {
                 display: none;
             }
+
+            div {
+                p {
+                    text-align: left;
+                }
+            }
         }
     }
 
     .sobreMi {
-        background-color: $colorCards2;
-        border-radius: 5px;
+        background-color: $colorTextos;
         display: grid;
         grid-template-areas:
             "titulo titulo"
@@ -300,28 +315,30 @@
             "adm bart"
             "boton boton"
         ;
-        gap: 10px;
+        gap: 20px;
         justify-content: center;
         align-items: center;
         justify-items: center;
         grid-area: conocimientos;
-        width: 400px;
+        width: 480px;
         height: 600px;
-        margin-left: 32px;
+        padding-left: 32px;
         padding: 16px;
-        box-shadow: 0px 3px 10px;
-        opacity: 70%;
 
+        h3 {
+            font-size: 2.8rem;
+            font-weight: 600;
+        }
         div {
             p {
-                border: 2px solid $colorTextos;
-                background-color: $colorFondoGeneral;
+                color: $colorFondoGeneral;
+                background-color: $colorTextos;
             }
         }
 
         #cv {
             &:hover {
-                background-color: $colorTextos;
+                background-color: $colorCards;
                 transition: 2s;
             }
 
@@ -375,8 +392,8 @@
         font-size: 12px;
 
         &:hover {
-            background-color: $colorTextos;
-            transition: 1s;
+            background-color: $colorCards;
+            transition: 2s;
             color: $colorFondoGeneral;
         }
     }

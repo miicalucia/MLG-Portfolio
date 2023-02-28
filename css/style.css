@@ -82,7 +82,7 @@ header {
 }
 .menu ul {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   grid-template-rows: auto;
   row-gap: 16px;
   justify-items: center;
@@ -92,19 +92,20 @@ header {
   text-decoration: none;
   font-weight: bold;
   color: #07133F;
-  width: 120px;
+  width: 200px;
   height: 120px;
   padding: 47px 16px;
   margin: 8px;
   display: inline-block;
   border: 2px solid #07133F;
   border-radius: 10px;
-  box-shadow: 2px 2px 7px;
-  background-color: #99adf3;
+  box-shadow: 2px 2px 4px rgba(7, 19, 63, 0.1960784314);
+  background-color: #fdfdfd;
   text-align: center;
 }
 .menu ul a .itemsMenu {
   list-style-type: none;
+  font-size: 18px;
 }
 
 /*MENU SITIO*/
@@ -127,6 +128,8 @@ header {
     width: 200px;
     height: 200px;
     padding: 82px 16px;
+  }
+  .menu ul a .itemsMenu {
     font-size: 2.2rem;
   }
   .navbarDesktopImportant {
@@ -156,7 +159,7 @@ header {
 }
 
 .sobreMi {
-  margin: 16px 4px;
+  padding: 24px 0px;
   text-align: center;
   display: grid;
   grid-template-areas: "titulo titulo" "html css" "adm bart" "boton boton";
@@ -164,10 +167,14 @@ header {
   justify-content: center;
   align-items: center;
   justify-items: center;
+  background-color: #07133F;
+  color: #fdfdfd;
 }
 .sobreMi h3 {
   margin: 8px 0px;
   grid-area: titulo;
+  font-size: 2.6rem;
+  font-weight: 500;
 }
 .sobreMi div {
   display: inline-block;
@@ -188,7 +195,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
   width: 110px;
@@ -196,14 +203,13 @@ header {
   margin: 8px;
   padding: 4px;
   font-size: 18px;
-  border: 2px solid #99adf3;
-  border-radius: 10% 20%;
 }
 .sobreMi #cv {
   width: 140px;
   height: 48px;
   background-color: #fdfdfd;
   border: 1px solid #07133F;
+  box-shadow: 2px 2px 4px rgba(7, 19, 63, 0.1960784314);
   border-radius: 6px;
   margin: 2rem 1rem;
   grid-area: boton;
@@ -256,6 +262,7 @@ header {
   background-color: #fdfdfd;
   border: #07133F 1px solid;
   border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(7, 19, 63, 0.1960784314);
   color: #07133F;
   font-weight: 600;
   font-size: 18px;
@@ -340,54 +347,58 @@ header {
     display: grid;
     grid-template-areas: "header header" "conocimientos main" "conocimientos main" "pieDePagina pieDePagina";
     column-gap: 3rem;
-    row-gap: 3rem;
-    align-items: center;
   }
   .about {
     grid-area: main;
     font-size: 2rem;
     font-weight: 300;
+    padding: 16px 64px;
   }
   .about .section-title {
     margin: 9px 0px;
   }
-  .about .section-title p {
-    text-align: center;
+  .about .section-title h1 {
+    text-align: left;
+    margin: 32px 0px;
   }
-  .about .row {
-    border: 2px #99adf3 dotted;
-    margin: 48px 0px;
-    padding: 16px;
+  .about .section-title p {
+    text-align: left;
   }
   .about .row h2 {
+    margin-left: 0px;
     margin-bottom: 1.6rem;
+    text-align: left;
   }
   .about .row img {
     display: none;
   }
+  .about .row div p {
+    text-align: left;
+  }
   .sobreMi {
-    background-color: #c4cef5;
-    border-radius: 5px;
+    background-color: #07133F;
     display: grid;
     grid-template-areas: "titulo titulo" "html css" "adm bart" "boton boton";
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     grid-area: conocimientos;
-    width: 400px;
+    width: 480px;
     height: 600px;
-    margin-left: 32px;
+    padding-left: 32px;
     padding: 16px;
-    box-shadow: 0px 3px 10px;
-    opacity: 70%;
+  }
+  .sobreMi h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
   }
   .sobreMi div p {
-    border: 2px solid #07133F;
-    background-color: #fdfdfd;
+    color: #fdfdfd;
+    background-color: #07133F;
   }
   .sobreMi #cv:hover {
-    background-color: #07133F;
+    background-color: #99adf3;
     transition: 2s;
   }
   .sobreMi #cv a:hover {
@@ -426,8 +437,8 @@ header {
     font-size: 12px;
   }
   .opcionesFormulario:hover {
-    background-color: #07133F;
-    transition: 1s;
+    background-color: #99adf3;
+    transition: 2s;
     color: #fdfdfd;
   }
   /*SERVICIOS*/
