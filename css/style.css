@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -14,19 +13,16 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
-
 body h1 {
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
   margin: 16px;
 }
-
 body h2 {
   font-size: 2.2rem;
   font-weight: 600;
 }
-
 body h3 {
   font-size: 2rem;
   font-weight: 500;
@@ -37,16 +33,13 @@ body h3 {
     font-size: 3rem;
     margin: 32px;
   }
-
   body h2 {
     font-size: 2.5rem;
   }
-
   body h3 {
     font-size: 2.3rem;
   }
 }
-
 /*HEADER INICIO*/
 .inicio img {
   width: 60px;
@@ -59,11 +52,9 @@ body h3 {
 .tituloPrincipal {
   margin: 8px;
 }
-
 .tituloPrincipal a {
   text-decoration: none;
 }
-
 .tituloPrincipal a h1 {
   color: #07133F;
   margin: 0px 24px;
@@ -73,7 +64,6 @@ body h3 {
   text-align: center;
   font-weight: bold;
 }
-
 .tituloPrincipal h2 {
   color: #07133F;
   margin: 8px;
@@ -92,12 +82,10 @@ header {
     height: 90px;
   }
 }
-
 /*MENU INICIO*/
 .menu {
   margin: 32px;
 }
-
 .menu ul {
   display: grid;
   grid-template-columns: 100%;
@@ -106,7 +94,6 @@ header {
   justify-items: center;
   padding-left: 0px;
 }
-
 .menu ul a {
   text-decoration: none;
   font-weight: bold;
@@ -122,7 +109,6 @@ header {
   background-color: #fdfdfd;
   text-align: center;
 }
-
 .menu ul a .itemsMenu {
   list-style-type: none;
   font-size: 18px;
@@ -132,7 +118,6 @@ header {
 .navbarDesktopImportant {
   line-height: 2;
 }
-
 .navbarDesktopImportant img {
   width: 60px;
   height: 60px;
@@ -145,52 +130,42 @@ header {
   .menu ul {
     grid-template-columns: 25% 25% 25% 25%;
   }
-
   .menu ul a {
     width: 200px;
     height: 200px;
     padding: 82px 16px;
   }
-
   .menu ul a .itemsMenu {
     font-size: 2.2rem;
   }
-
   .navbarDesktopImportant {
     margin: 0px;
     height: 87px;
   }
-
   .navbarDesktopImportant img {
     width: 90px;
     height: 90px;
   }
-
   .navbarDesktopImportant .items {
     margin-left: 16px;
     font-size: 20px;
   }
-
   .navbarDesktopImportant .items:hover {
     opacity: 70%;
   }
 }
-
 /*SOBRE MI*/
 .about {
   text-align: center;
 }
-
 .about img {
   width: 200px;
   height: 174px;
   border-radius: 10px;
 }
-
 .about p {
   line-height: 2;
 }
-
 .about h2 {
   margin: 16px;
 }
@@ -207,34 +182,27 @@ header {
   background-color: #07133F;
   color: #fdfdfd;
 }
-
 .sobreMi h3 {
   margin: 8px 0px;
   grid-area: titulo;
   font-size: 2.6rem;
   font-weight: 500;
 }
-
 .sobreMi div {
   display: inline-block;
 }
-
 .sobreMi div .conocimientos1 {
   grid-area: html;
 }
-
 .sobreMi div .conocimientos2 {
   grid-area: css;
 }
-
 .sobreMi div .conocimientos3 {
   grid-area: adm;
 }
-
 .sobreMi div .conocimientos4 {
   grid-area: bart;
 }
-
 .sobreMi div p {
   display: flex;
   flex-direction: column;
@@ -248,7 +216,6 @@ header {
   padding: 4px;
   font-size: 18px;
 }
-
 .sobreMi #cv {
   width: 160px;
   height: 48px;
@@ -259,7 +226,6 @@ header {
   margin: 2rem 1rem;
   grid-area: boton;
 }
-
 .sobreMi #cv a {
   text-decoration: none;
   color: #07133F;
@@ -273,42 +239,34 @@ header {
   max-height: 708px;
   margin: 18px;
 }
-
 .formulario h1 {
   margin-bottom: 32px;
 }
-
 .formulario div input {
   font-size: 16px;
   margin: 8px 0px 32px 0px;
   border: 1px solid #07133F;
 }
-
 .formulario div textarea {
   font-size: 16px;
   border: 1px solid #07133F;
 }
-
 .formulario .novedades {
   display: flex;
   align-items: center;
 }
-
 .formulario .novedades .check {
   margin: 4px;
 }
-
 .formulario .novedades label {
   margin: 4px;
 }
-
 .formulario .botonesFormulario {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 8px;
 }
-
 .formulario .opcionesFormulario {
   width: 140px;
   height: 48px;
@@ -326,11 +284,9 @@ header {
 .carrusel h2 {
   color: #fdfdfd;
 }
-
 .carrusel img {
   width: 100%;
 }
-
 .carrusel p {
   color: #07133F;
   font-weight: 500;
@@ -339,7 +295,6 @@ header {
 .texto div {
   margin: 8px 0px 32px 0px;
 }
-
 .texto div p {
   text-align: center;
 }
@@ -350,16 +305,13 @@ header {
   padding: 16px;
   margin: auto;
 }
-
 .sectionReferencias h2 {
   text-align: center;
   margin-bottom: 32px;
 }
-
 .sectionReferencias .referencias h3 {
   margin-bottom: 16px;
 }
-
 .sectionReferencias .referencias img {
   margin-bottom: 16px;
   width: 60px;
@@ -375,7 +327,6 @@ header {
   list-style-type: none;
   padding: 8px;
 }
-
 .portafolio .trabajos li {
   width: 70%;
   padding: 32px;
@@ -386,7 +337,6 @@ header {
   border-radius: 6px;
   text-align: center;
 }
-
 .portafolio .trabajos li a {
   color: #07133F;
   text-decoration: none;
@@ -400,21 +350,17 @@ header {
     flex-direction: column;
     align-items: center;
   }
-
   .contenedorForm .formulario {
     width: 70%;
   }
 }
-
 @media (min-width: 1024px) {
-
   /*SOBRE MI*/
   .bodySobreMi {
     display: grid;
     grid-template-areas: "header header" "conocimientos main" "conocimientos main" "pieDePagina pieDePagina";
     column-gap: 3rem;
   }
-
   .about {
     text-align: left;
     grid-area: main;
@@ -422,25 +368,20 @@ header {
     font-weight: 300;
     padding: 16px 64px;
   }
-
   .about .section-title {
     margin: 9px 0px;
   }
-
   .about .section-title h1 {
     text-align: left;
     margin: 32px 0px;
   }
-
   .about .row h2 {
     margin-left: 0px;
     margin-bottom: 1.6rem;
   }
-
   .about .row img {
     display: none;
   }
-
   .sobreMi {
     background-color: #07133F;
     display: grid;
@@ -455,83 +396,67 @@ header {
     padding-left: 32px;
     padding: 16px;
   }
-
   .sobreMi h3 {
     font-size: 2.8rem;
     font-weight: 600;
   }
-
   .sobreMi div p {
     color: #fdfdfd;
     background-color: #07133F;
   }
-
   .sobreMi #cv:hover {
     background-color: #99adf3;
     transition: 2s;
   }
-
   .sobreMi #cv a:hover {
     color: #fdfdfd;
   }
-
   .animacion {
     animation-name: animacion;
     animation-timing-function: ease-in;
     animation-duration: 3s;
   }
-
   @keyframes animacion {
     0% {
       opacity: 0%;
     }
-
     50% {
       opacity: 50%;
     }
-
     100% {
       opacity: 100%;
     }
   }
-
   /*CONTACTO*/
   .formulario {
     width: 500px;
     grid-area: formulario;
   }
-
   .formulario div {
     font-size: 2rem;
   }
-
   .formulario div input {
     font-size: 1.5rem;
   }
-
   .opcionesFormulario {
     width: 100px;
     height: 50px;
     font-size: 12px;
   }
-
   .opcionesFormulario:hover {
     background-color: #99adf3;
     transition: 2s;
     color: #fdfdfd;
   }
-
   /*SERVICIOS*/
   .sectionReferencias {
     max-width: 1024px;
   }
-
   /*PORTAFOLIO*/
   .portafolio .trabajos li a {
     font-size: 3rem;
   }
 }
-
 .footerGeneral {
   display: flex;
   flex-flow: column nowrap;
@@ -539,7 +464,6 @@ header {
   font-size: 12px;
   color: #07133F;
 }
-
 .footerGeneral p {
   margin: 16px;
   text-align: center;
@@ -557,17 +481,14 @@ header {
   margin: 8px;
   padding: 0px;
 }
-
 .redesSociales .redes {
   margin: 8px;
 }
-
 .redesSociales .redes a {
   text-decoration: none;
   color: #07133F;
   font-size: 1.4rem;
 }
-
 .redesSociales .redes a i {
   display: inline-block;
   margin-right: 8px;
@@ -580,7 +501,6 @@ header {
   font-size: 12px;
   color: #07133F;
 }
-
 .socialMedia .redesContacto {
   list-style-type: none;
   display: grid;
@@ -592,17 +512,14 @@ header {
   margin: 8px;
   padding: 0px;
 }
-
 .socialMedia .redesContacto .redes {
   margin: 8px;
 }
-
 .socialMedia .redesContacto .redes a {
   text-decoration: none;
   font-size: 1.4rem;
   color: #07133F;
 }
-
 .socialMedia .redesContacto .redes a i {
   display: inline-block;
   margin-right: 8px;
@@ -611,7 +528,6 @@ header {
 .derechos {
   text-align: center;
 }
-
 .derechos p {
   margin-top: 16px;
   font-size: 12px;
@@ -622,28 +538,23 @@ header {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
   .derechos {
     grid-area: footer;
     position: relative;
     right: 35%;
   }
-
   .bodyContacto {
     display: grid;
     justify-items: end;
     grid-template-areas: "header header" "formulario social" "formulario social" "footer footer";
   }
-
   .footerGeneral {
     grid-area: pieDePagina;
   }
-
   .footerGeneral .redesSociales {
     grid-template-columns: 120px 120px 120px 120px;
   }
-
   .socialMedia {
     display: flex;
     flex-flow: column nowrap;
@@ -655,23 +566,19 @@ header {
     height: 600px;
     grid-area: social;
   }
-
   .socialMedia h2 {
     color: #fdfdfd;
     font-size: 2.8rem;
     font-weight: 600;
     margin: 50px 0px;
   }
-
   .socialMedia .redesContacto {
     list-style-type: none;
     padding: 0px;
   }
-
   .socialMedia .redesContacto .redes {
     margin: 24px 0px;
   }
-
   .socialMedia .redesContacto .redes a {
     font-size: 18px;
     color: #fdfdfd;
@@ -679,12 +586,10 @@ header {
     flex-direction: column;
     align-items: center;
   }
-
   .socialMedia .redesContacto .redes a:hover {
     color: #99adf3;
     transition: 0.7s;
   }
-
   .socialMedia .redesContacto .redes a i {
     margin: 16px;
   }
