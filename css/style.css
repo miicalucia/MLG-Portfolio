@@ -362,6 +362,7 @@ header {
     column-gap: 3rem;
   }
   .about {
+    text-align: left;
     grid-area: main;
     font-size: 2rem;
     font-weight: 300;
@@ -374,19 +375,12 @@ header {
     text-align: left;
     margin: 32px 0px;
   }
-  .about .section-title p {
-    text-align: left;
-  }
   .about .row h2 {
     margin-left: 0px;
     margin-bottom: 1.6rem;
-    text-align: left;
   }
   .about .row img {
     display: none;
-  }
-  .about .row div p {
-    text-align: left;
   }
   .sobreMi {
     background-color: #07133F;

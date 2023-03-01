@@ -267,6 +267,7 @@
     }
 
     .about {
+        text-align: left;
         grid-area: main;
         font-size: 2rem;
         font-weight: 300;
@@ -280,9 +281,6 @@
                 margin: 32px 0px;
             }
 
-            p {
-                text-align: left;
-            }
         }
 
         .row {
@@ -290,18 +288,12 @@
             h2 {
                 margin-left: 0px;
                 margin-bottom: 1.6rem;
-                text-align: left;
             }
 
             img {
                 display: none;
             }
 
-            div {
-                p {
-                    text-align: left;
-                }
-            }
         }
     }
 
