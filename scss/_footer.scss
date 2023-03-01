@@ -67,12 +67,20 @@
     }
 }
 
+@media (max-width:1023px) {
+    .socialMedia {
+        h2 {
+            display: none;
+        }
+    }
+}
+
 @media (min-width:1024px) {
 
     .derechos {
-        display: flex;
-        flex-flow: column nowrap;
         grid-area: footer;
+        position: relative;
+        right: 35%;
     }
 
     .bodyContacto {
@@ -122,16 +130,15 @@
                 a {
                     font-size: 18px;
                     color: $colorFondoGeneral;
-
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     &:hover {
-                        color: $colorCards;
+                        color: $colorHover;
                         transition: 0.7s;
                     }
-                    
+
                     i {
                         margin: 16px;
                     }

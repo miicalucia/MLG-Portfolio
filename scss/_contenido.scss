@@ -186,8 +186,7 @@
 }
 
 .sectionReferencias {
-    border: 2px dotted $colorCards;
-    background-color: $colorCards2;
+    background-color: $colorCards;
     border-radius: 10px;
     padding: 16px;
     margin: auto;
@@ -265,8 +264,6 @@
             "pieDePagina pieDePagina"
         ;
         column-gap: 3rem;
-
-
     }
 
     .about {
@@ -341,7 +338,7 @@
 
         #cv {
             &:hover {
-                background-color: $colorCards;
+                background-color: $colorHover;
                 transition: 2s;
             }
 
@@ -395,7 +392,7 @@
         font-size: 12px;
 
         &:hover {
-            background-color: $colorCards;
+            background-color: $colorHover;
             transition: 2s;
             color: $colorFondoGeneral;
         }
